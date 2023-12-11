@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-const url = import.meta.env.VITE_API_URL
+const url = 'https://6291fd299d159855f0839283.mockapi.io'
 export default function Products() {
 
     const [data, setData] = useState([])
