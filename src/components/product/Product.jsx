@@ -1,7 +1,7 @@
 import React ,{useState, useEffect} from 'react'
 import axios from 'axios';
 import { useParams, useLocation } from 'react-router-dom';
-const url = 'https://6291fd299d159855f0839283.mockapi.io'
+const url = import.meta.env.VITE_API_URL
 export default function Product() {
     console.log(useParams())
     const {id} = useParams()
@@ -21,7 +21,7 @@ export default function Product() {
         fetchData()
     },[])
 
-    
+    console.log(import.meta.env.VITE_API_URL);
   return (
     <div>
         <div>
